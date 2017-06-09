@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+
+  <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+  <style>
+    #progress {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <select id="select-digits">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+    digit
+    <input type="button" name="search-ids" id="search-ids" value="search">
+  </div>
+  <div id="progress">
+    <span>Searching...</span>
+    <span id="current-number"></span>
+  </div>
+</body>
+
+</html>
