@@ -5,7 +5,7 @@ export default class Main {
     private maxNumber: number = 0;
     private startTime: number = 0;
     constructor() {
-        console.log('Typescript Webpack starter launched, again!');
+        console.log('Typescript Webpack starters launched, again!');
         this.eventHandlers();
     }
 
@@ -29,7 +29,7 @@ export default class Main {
     private searchDigits(digits) {
         this.startTime = Date.now();
         document.getElementById("progress").style.display = 'block';
-        console.log("searching...", pi);
+        console.log("searching...");
 
         for(let i = 0 ; i < 10**digits ; i++) {
             //console.log("getting", i);
@@ -40,7 +40,8 @@ export default class Main {
                     console.log('new max number!', this.maxNumber);
                 }
             } else {
-                //console.warn('integer not found:', this.pad(digits, i));
+                console.warn('integer not found:', this.pad(digits, i));
+                break;
             }
         }
         console.log(`done, took ${Date.now() - this.startTime} ms`);

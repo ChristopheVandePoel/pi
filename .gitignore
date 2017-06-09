@@ -9,3 +9,5 @@ node_modules/
 
 #large
 src/lib/pi.txt
+
+src/lib/large-pi*
