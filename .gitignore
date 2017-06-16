@@ -11,3 +11,5 @@ node_modules/
 src/lib/pi.txt
 
 src/lib/large-pi*
+nodeversion/app/pi/pi
+nodeversion/app/pi/pi.txt
